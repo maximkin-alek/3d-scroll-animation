@@ -35,6 +35,14 @@ body {
   font-weight: 300;
 }
 
+* {
+  scrollbar-width: none; /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
 .container {
   width: 100%;
   height: 100%;
