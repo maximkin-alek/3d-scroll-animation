@@ -1,5 +1,6 @@
-import styles from './app/page.module.css'
-import { FrameType } from "./types";
+import styles from './app/page.module.css';
+import { FrameType } from './types';
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 export const initialFrames: FrameType[] = [
   {
@@ -11,12 +12,12 @@ export const initialFrames: FrameType[] = [
   {
     variant: 'photo',
     slidePosition: 'left',
-    image: 'url(/images/r1.jpg)',
+    image: `url(${basePath}/images/r1.jpg)`,
   },
   {
     variant: 'video',
     slidePosition: 'right',
-    videoSrc: '/media/r-video.mp4',
+    videoSrc: `${basePath}/media/r-video.mp4`,
     withDarkBg: true,
   },
   { variant: 'empty' },
@@ -32,21 +33,21 @@ export const initialFrames: FrameType[] = [
   {
     variant: 'photo',
     slidePosition: 'left',
-    image: 'url(/images/r2.jpg)',
+    image: `url(${basePath}/images/r2.jpg)`,
     withDarkBg: true,
   },
   { variant: 'empty' },
   {
     variant: 'photo',
     slidePosition: 'right',
-    image: 'url(/images/r3.jpg)',
+    image: `url(${basePath}/images/r3.jpg)`,
     withDarkBg: true,
   },
   { variant: 'empty' },
   {
     variant: 'photo',
     slidePosition: 'left',
-    image: 'url(/images/r4.jpg)',
+    image: `url(${basePath}/images/r4.jpg)`,
     withDarkBg: true,
   },
   { variant: 'empty' },
@@ -59,7 +60,7 @@ export const initialFrames: FrameType[] = [
   {
     variant: 'photo',
     slidePosition: 'right',
-    image: 'url(/images/a1.jpg)',
+    image: `url(${basePath}/images/a1.jpg)`,
   },
   {
     variant: 'text',
@@ -72,20 +73,20 @@ export const initialFrames: FrameType[] = [
   {
     variant: 'photo',
     slidePosition: 'right',
-    image: 'url(/images/a2.jpg)',
+    image: `url(${basePath}/images/a2.jpg)`,
     withDarkBg: true,
   },
   { variant: 'empty' },
   {
     variant: 'photo',
     slidePosition: 'left',
-    image: 'url(/images/a3.jpg)',
+    image: `url(${basePath}/images/a3.jpg)`,
   },
   { variant: 'empty' },
   {
     variant: 'photo',
     slidePosition: 'right',
-    image: 'url(/images/a4.jpg)',
+    image: `url(${basePath}/images/a4.jpg)`,
   },
   {
     variant: 'title',
@@ -96,8 +97,8 @@ export const initialFrames: FrameType[] = [
   {
     variant: 'photo',
     slidePosition: 'left',
-    image: 'url(/images/b3.jpg)',
-		withDarkBg: true,
+    image: `url(${basePath}/images/b3.jpg)`,
+    withDarkBg: true,
   },
   { variant: 'empty' },
   {
@@ -114,20 +115,20 @@ export const initialFrames: FrameType[] = [
   {
     variant: 'photo',
     slidePosition: 'left',
-    image: 'url(/images/b4.jpg)',
+    image: `url(${basePath}/images/b4.jpg)`,
     withDarkBg: true,
   },
   { variant: 'empty' },
   {
     variant: 'photo',
     slidePosition: 'right',
-    image: 'url(/images/b2.jpg)',
+    image: `url(${basePath}/images/b2.jpg)`,
   },
   { variant: 'empty' },
   {
     variant: 'photo',
     slidePosition: 'left',
-    image: 'url(/images/b1.jpg)',
+    image: `url(${basePath}/images/b1.jpg)`,
     withDarkBg: true,
   },
   {

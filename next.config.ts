@@ -1,12 +1,10 @@
-import type { NextConfig } from "next";
-const isGithubPages = process.env.GITHUB_PAGES === 'true';
+import type { NextConfig } from 'next';
 const nextConfig: NextConfig = {
-   output: 'export',
-  basePath: isGithubPages ? '/3d-scroll-animation' : '', 
-  assetPrefix: isGithubPages ? '/3d-scroll-animation/' : '', 
-  images: {
-    unoptimized: true
-  }
+  basePath: process.env.BASE_PATH || '',
+  assetPrefix: process.env.BASE_PATH || '',
+  publicRuntimeConfig: {
+    basePath: process.env.BASE_PATH || '',
+  },
 };
 
 export default nextConfig;
