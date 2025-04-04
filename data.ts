@@ -61,6 +61,7 @@ export const initialFrames: FrameType[] = [
     variant: 'photo',
     slidePosition: 'right',
     image: `url(${basePath}/images/a1.jpg)`,
+    withDarkBg: true,
   },
   {
     variant: 'text',
