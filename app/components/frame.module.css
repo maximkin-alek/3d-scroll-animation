@@ -1,0 +1,91 @@
+.frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition), opacity 0.75s ease;
+  will-change: transform;
+  transform-style: preserve-3d;
+}
+
+.frameMedia {
+  position: relative;
+  width: calc(var(--side-small) * var(--index));
+  height: calc(var(--side-big) * var(--index));
+  background-position: center;
+  background-size: cover;
+}
+
+/* важный момент, иначе на хроме видео пробивается поверх других слайдов */
+.frameTitle {
+  z-index: 10;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.mainTitle,
+.textTitle {
+  font-weight: 100;
+  text-transform: uppercase;
+  width: min-content;
+  min-width: 240px;
+  line-height: 1;
+}
+
+.mainTitle {
+  text-align: center;
+  font-size: calc(var(--index) * 3.3);
+}
+
+.frameWithDarkBg {
+  background-color: rgb(0 0 0 / 0.8);
+}
+
+.frameMediaLeft {
+  right: calc(var(--side-small) / 2 * var(--index) + var(--gutter));
+}
+
+.frameMediaRight {
+  left: calc(var(--side-small) / 2 * var(--index) + var(--gutter));
+}
+
+.frameMediaVideo {
+  width: calc(var(--side-big) * var(--index));
+  height: calc(var(--side-small) * var(--index));
+  position: relative;
+}
+
+.frameMediaVideoRight {
+  left: calc(var(--side-big) / 2 * var(--index) + var(--gutter));
+}
+
+.frameMediaVideoLeft {
+  right: calc(var(--side-big) / 2 * var(--index) + var(--gutter));
+}
+
+.frameTextRight {
+  position: absolute;
+  left: 20vw;
+  right: auto;
+}
+
+.frameTextLeft {
+  position: absolute;
+  right: 18vw;
+  left: auto;
+}
+
+.textTitle {
+  font-size: calc(var(--index) * 2);
+}
+
+.textContent {
+  max-width: 30vw;
+  margin-top: 3vh;
+}

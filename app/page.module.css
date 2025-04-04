@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  perspective: 1500px;
+}
+
+.gallery {
+  transform-style: preserve-3d;
+  height: 100%;
+}
+
+.firstSubtitle {
+  font-weight: 300;
+  font-style: italic;
+  color: goldenrod;
+}
+
+.secondSubtitle {
+  font-style: italic;
+  font-weight: 300;
+  color: darkturquoise;
+}
